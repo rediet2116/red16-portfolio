@@ -4,14 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rediet Meseret | My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 65px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: #faf5ff;
+            color: #29213d;
+        }
+
+        nav {
+            background: #4c1d95;
+            padding: 15px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #f0abfc;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #ede9fe, #fce7f3);
+        }
+
+        header .eyebrow {
+            color: #7e22ce;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        header h1 {
+            color: #4c1d95;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        header h3 {
+            color: #6d28d9;
+        }
+
+        .hero-link {
+            display: inline-block;
+            background: #7e22ce;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .hero-link:hover {
+            background: #581c87;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 18px;
+        }
+
+        section,
+        .developer-card {
+            background: white;
+            padding: 24px;
+            margin: 22px 0;
+            border-radius: 14px;
+            border: 1px solid #e9d5ff;
+            border-left: 5px solid #a855f7;
+            box-shadow: 0 4px 14px #4c1d9510;
+        }
+
+        h2 {
+            color: #6d28d9;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #7e22ce;
+        }
+
+        a {
+            color: #7e22ce;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        blockquote {
+            background: #faf5ff;
+            border-left: 4px solid #c084fc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-style: italic;
+        }
+
+        article {
+            margin: 20px 0;
+        }
+
+        details {
+            background: #faf5ff;
+            padding: 14px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            color: #7e22ce;
+            font-weight: bold;
+        }
+
+        summary:hover {
+            color: #4c1d95;
+        }
+
+        figure {
+            margin: 18px 0;
+        }
+
+        dt {
+            color: #6d28d9;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 0;
+        }
+
+        progress {
+            width: 100%;
+            height: 18px;
+            accent-color: #9333ea;
+        }
+
+        .developer-card {
+            max-width: 100%;
+        }
+
+        .developer-card p {
+            margin-bottom: 10px;
+        }
+
+        aside {
+            background: #fdf2f8;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #4c1d95;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 35px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 10px 5px;
+            }
+
+            nav a {
+                margin: 5px 7px;
+                font-size: 13px;
+            }
+
+            header {
+                padding: 40px 16px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section,
+            .developer-card {
+                padding: 17px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <p>MY PERSONAL PORTFOLIO</p>
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#dreams">Vision</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+    </nav>
+
+    <header id="home">
+        <p class="eyebrow">MY PERSONAL PORTFOLIO</p>
+
         <h1>Hi, I'm Rediet Meseret 👋</h1>
+
         <h3>Software Engineering Student | Aspiring Web Developer</h3>
 
         <p>
@@ -19,32 +250,27 @@
             I'm learning, creating, and growing one step at a time.
         </p>
 
-        <p>
-            <a href="#about">Discover My Story ↓</a>
-        </p>
+        <a class="hero-link" href="#about">Discover My Story ↓</a>
     </header>
 
-    <hr>
-
     <main>
+
         <section id="about">
             <h2>🌷 A Little About Me</h2>
 
             <p>
                 I'm Rediet, a Software Engineering student with
-                a growing passion for web development.
-                I enjoy discovering how websites work and how
-                simple ideas can become something useful.
+                a growing passion for web development. I enjoy
+                discovering how websites work and how simple
+                ideas can become something useful.
             </p>
 
             <p>
-                I'm still at the beginning of my journey,
-                but I'm excited to learn, experiment, make mistakes,
+                I'm still at the beginning of my journey, but I'm
+                excited to learn, experiment, make mistakes,
                 and improve every day.
             </p>
         </section>
-
-        <hr>
 
         <section id="skills">
             <h2>💻 What I'm Learning</h2>
@@ -56,8 +282,6 @@
                 <li>Git and GitHub — sharing and tracking my progress</li>
             </ul>
         </section>
-
-        <hr>
 
         <section id="dreams">
             <h2>✨ My Vision</h2>
@@ -74,86 +298,61 @@
                 <li>Build projects that solve real problems.</li>
                 <li>Keep improving my software engineering skills.</li>
                 <li>Use technology to make a positive difference.</li>
-                <li>make my life of programming excited</li>
+                <li>Make my programming journey exciting.</li>
             </ol>
         </section>
-
-        <hr>
 
         <section id="journey">
             <h2>🚀 My Learning Journey</h2>
 
+            <p>
+                I'm building my skills one concept at a time.
+            </p>
+
             <details>
                 <summary>What am I working toward?</summary>
+
                 <p>
                     I'm starting with HTML and building my first
-                    personal portfolio. Next, I plan to explore CSS
-                    and JavaScript as my skills grow.
+                    personal portfolio. Next, I plan to explore
+                    CSS and JavaScript as my skills grow.
                 </p>
             </details>
         </section>
-        
-        <hr>
 
         <section id="projects">
-            <h2>Selected Projects</h2>
+            <h2>✨ My Projects</h2>
 
             <p>
-                A collection of projects I am building
-                as I develop my software engineering skills.
+                A collection of projects I'm building as I develop
+                my software engineering skills.
             </p>
 
             <article>
                 <h3>01. Personal Portfolio</h3>
 
-                <p>
-                    <strong>Type:</strong> Web Development
-                </p>
+                <p><strong>Type:</strong> Web Development</p>
+                <p><strong>Built with:</strong> HTML and CSS</p>
 
                 <p>
-                    <strong>Built with:</strong> HTML
+                    My personal website, created to introduce myself,
+                    share my interests, and document my learning journey.
                 </p>
 
-                <p>
-                    My first personal website, created to introduce
-                    myself, share my interests, and document my work.
-                </p>
-
-                <a href="https://github.com/rediet2116/red16-portfolio">
-                    View Project Repository
+                <a href="https://github.com/rediet2116/red16-portfolio"
+                   target="_blank" rel="noopener noreferrer">
+                    View Project Repository ↗
                 </a>
-            </article>
-
-            <hr>
-
-
-        </section>
-
-        <hr>
-
-        <section id="project-details">
-            <h2>Explore My Work</h2>
-
-            <article>
-                <h3>My First Portfolio</h3>
-
-                <p>
-                    This website is my first step toward becoming
-                    a web developer. I am building it as I learn
-                    new HTML concepts.
-                </p>
 
                 <figure>
-                    <figcaption>
-                        Project information
-                    </figcaption>
+                    <figcaption><strong>Project information</strong></figcaption>
 
                     <dl>
                         <dt>Project type</dt>
                         <dd>Personal website</dd>
 
                         <dt>Technology</dt>
-                        <dd>HTML</dd>
+                        <dd>HTML and CSS</dd>
 
                         <dt>Current stage</dt>
                         <dd>Learning and development</dd>
@@ -164,58 +363,65 @@
                     <summary>What did I learn from this project?</summary>
 
                     <p>
-                        I learned how to organize a web page,
-                        create links, use headings, and track
-                        my progress with Git and GitHub.
+                        I learned how to organize a web page, create links,
+                        use HTML elements, style a page with CSS, and
+                        track my progress with Git and GitHub.
                     </p>
                 </details>
             </article>
 
-            <hr>
-
             <article>
-                <h3>My HTML Learning Progress</h3>
+                <h3>📈 My HTML Learning Progress</h3>
 
                 <p>HTML fundamentals</p>
 
                 <progress value="4" max="10">4 out of 10</progress>
 
                 <p>
-                    This is my personal learning tracker,
-                    not an official assessment.
+                    <small>
+                        This is my personal learning tracker,
+                        not an official assessment.
+                    </small>
                 </p>
             </article>
 
-            <hr>
-
             <aside>
-                <h3>A Resource I Recommend</h3>
+                <h3>📚 A Resource I Recommend</h3>
 
                 <p>
                     I can use
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                        MDN Web Docs
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                       target="_blank" rel="noopener noreferrer">
+                        MDN Web Docs ↗
                     </a>
                     to explore HTML elements and practice new concepts.
                 </p>
             </aside>
         </section>
 
-<style>
-  .developer-card { border: 2px solid #64748b; border-radius: 12px; padding: 16px; max-width: 350px; background: #f1f5f9; color: #1e293b; }
-  .developer-card progress { width: 100%; accent-color: #0d9488; }
-</style>
+        <section>
+            <h2>💜 My Developer Journey</h2>
 
-<figure class="developer-card">
-  <h2>My Developer Journey</h2>
-  <p>Software Engineering Student | Future Developer</p>
+            <p>
+                Software Engineering Student | Future Developer
+            </p>
 
-  <progress value="4" max="10"></progress>
-  <figcaption>My learning journey: growing one skill at a time.</figcaption>
-</figure>
+            <p>
+                My learning journey: growing one skill at a time.
+            </p>
+
+            <p>
+                <strong>My mindset:</strong>
+                Learn it, practice it, build it.
+            </p>
+        </section>
 
     </main>
 
+    <footer>
+        <p>Made with 💜 by Rediet Meseret</p>
+        <p>Learning, creating, and growing one step at a time.</p>
+    </footer>
 
 </body>
 </html>
