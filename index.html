@@ -224,6 +224,35 @@
                 padding: 17px;
             }
         }
+        
+/* Smooth hover effects */
+nav a {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
+
+section,
+article {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section:hover,
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px #4c1d9518;
+}
+
+.hero-link {
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.hero-link:hover {
+    transform: translateY(-2px);
+}
+
     </style>
 </head>
 
