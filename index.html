@@ -302,63 +302,39 @@ article:hover {
         grid-template-columns: 1fr;
     }
 }
-/* Day 6: Two-column hero layout */
-
-.hero-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    text-align: left;
+.contact-message {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 25px;
+    background: #f3e8ff;
+    border-radius: 14px;
 }
 
-.hero-text {
-    flex: 1;
+.contact-message h3 {
+    color: #581c87;
+    font-size: 1.5rem;
 }
 
-.hero-text p {
-    max-width: 600px;
+.contact-message p {
+    color: #4b4560;
+    max-width: 550px;
+    margin: 12px auto 22px;
 }
 
-.hero-card {
-    flex: 0 1 320px;
-    background: rgba(15, 23, 42, 0.65);
-    border: 1px solid #2dd4bf;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.hero-card h3 {
-    color: #5eead4;
-    margin-top: 0;
-}
-
-.hero-card p {
-    color: #cbd5e1;
-}
-
-.hero-label {
+.contact-button {
     display: inline-block;
-    background: #134e4a;
-    color: #99f6e4;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    background: #6d28d9;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-@media (max-width: 700px) {
-    .hero-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 25px;
-    }
-
-    .hero-card {
-        flex-basis: auto;
-    }
+.contact-button:hover {
+    background: #4c1d95;
+    transform: translateY(-4px);
 }
     </style>
 </head>
@@ -376,57 +352,20 @@ article:hover {
     </nav>
 
     <header id="home">
+        <p class="eyebrow">MY PERSONAL PORTFOLIO</p>
 
-    <div class="hero-container">
+        <h1>Hi, I'm Rediet Meseret 👋</h1>
 
-        <div class="hero-text">
+        <h3>Software Engineering Student | Aspiring Web Developer</h3>
 
-            <p>SOFTWARE ENGINEERING STUDENT</p>
+        <p>
+            Welcome to my little corner of the internet!
+            I'm learning, creating, and growing one step at a time.
+        </p>
 
-            <h1>Hello, I'm <span>Yordanos Mesfin.</span></h1>
+        <a class="hero-link" href="#about">Discover My Story ↓</a>
+    </header>
 
-            <h2>Future Software Developer</h2>
-
-            <p>
-                I'm learning to turn creative ideas into technology.
-                Every project and every challenge helps me grow
-                into the developer I want to become.
-            </p>
-
-            <a class="hero-button" href="#projects">
-                Explore My Projects →
-            </a>
-
-            <p>
-                <a href="https://github.com/yordi19-21"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Visit my GitHub Profile ↗
-                </a>
-            </p>
-
-        </div>
-
-        <div class="hero-card">
-
-            <span class="hero-label">MY DEVELOPER JOURNEY</span>
-
-            <h3>Learning. Building. Growing.</h3>
-
-            <p>
-                Currently exploring programming, web development,
-                and problem-solving.
-            </p>
-
-            <p><strong>Focus:</strong> Software Engineering</p>
-            <p><strong>Learning:</strong> HTML & CSS</p>
-            <p><strong>Goal:</strong> Build useful projects</p>
-
-        </div>
-
-    </div>
-
-</header>
     <main>
 
         <section id="about">
@@ -631,6 +570,19 @@ article:hover {
             Visit my GitHub Profile ↗
         </a>
     </address>
+    <div class="contact-message">
+    <h3>Have a project idea?</h3>
+
+    <p>
+        I'm always excited to learn, collaborate,
+        and explore new opportunities.
+        Let's create something meaningful together!
+    </p>
+
+    <a href="mailto:rediet@example.com" class="contact-button">
+        Let's Talk
+    </a>
+</div>
 </section>
 
     </main>
